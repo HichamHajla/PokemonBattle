@@ -1,12 +1,13 @@
 import "../components/style.css"
 import { Link } from 'react-router-dom'
+import credits from "../asset/Credits.png"
 
 
 const Credits = () => {
     return(
         <div className="credits">
             <div className="cred">   
-            <img style={{width:"700px", marginTop:"1%", marginLeft:"5%"}} src="https://fontmeme.com/temporary/ed67cfa19dc462200c4b1e103d9be539.png" alt="credits"/>
+            <img style={{width:"700px", marginTop:"1%", marginLeft:"5%"}} src={credits} alt="credits"/>
                 <div className="cred2">
                 <div className="cred3" style={{width:"600px"}}>
                     <h1>Developers</h1>
@@ -22,7 +23,7 @@ const Credits = () => {
                     </div>
                     </div>
                 <div>
-                <Link style={{textDecoration:"none"}} to='/'><button style={{marginRight:"2%"}} className="start">BACK</button></Link>
+                <Link style={{textDecoration:"none"}} to='/account'><button style={{marginRight:"2%"}} className="start">BACK</button></Link>
                 </div>
 
             </div>
